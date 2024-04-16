@@ -34,6 +34,6 @@ const StyledSkills = styled.section`
      background-color: #010116;
     min-height: 100vh;
     color: snow;
-    padding: 20px 120px;
-    export{}
-`
+    /* padding: 0px 120px; */
+   `
+   export{}
