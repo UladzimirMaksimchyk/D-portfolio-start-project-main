@@ -5,17 +5,22 @@ import { Icon } from "../../../components/icon/Icon";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
 
+
 export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>
-            The services i offer:
+                The services i offer:
             </SectionTitle>
-            <FlexWrapper>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+
             </FlexWrapper>
 
         </StyledSkills>
@@ -26,6 +31,9 @@ export const Skills = () => {
 
 
 const StyledSkills = styled.section`
-    background-color: pink;
+     background-color: #010116;
     min-height: 100vh;
+    color: snow;
+    padding: 20px 120px;
+    export{}
 `
