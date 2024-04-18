@@ -8,11 +8,13 @@ import { Skill } from "../skills/skill/Skill";
 export const About = () => {
     return (
         <StyledAbout>
-            <SectionTitle>
-            About me:
-            </SectionTitle>
             <FlexWrapper>
-            <Skill iconId={"git"} title={"HTML5"} description={"I can use version control systems well, and Git & Mecurial are my go-to tool."} />
+                <SectionTitle>
+                    About me:
+                </SectionTitle>
+                <AboutText>
+                    Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. Here are the major skiills i have.
+                </AboutText>
 
             </FlexWrapper>
 
@@ -30,4 +32,10 @@ min-height: 100vh;
 const SectionTitle = styled.h2`
     
 `
+
+const AboutText = styled.p`
+    
+`
+
+
 export { }
