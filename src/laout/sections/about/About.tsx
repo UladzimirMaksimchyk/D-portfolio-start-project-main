@@ -15,7 +15,9 @@ export const About = () => {
                 <AboutText>
                     Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. Here are the major skiills i have.
                 </AboutText>
-
+                <AboutTitle>
+                5+
+                </AboutTitle>
             </FlexWrapper>
 
         </StyledAbout>
