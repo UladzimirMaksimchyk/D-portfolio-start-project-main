@@ -18,6 +18,9 @@ export const About = () => {
                 <AboutTitle>
                 5+
                 </AboutTitle>
+                <AboutText>
+                Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+                </AboutText>
             </FlexWrapper>
 
         </StyledAbout>
@@ -41,6 +44,5 @@ const AboutText = styled.p`
 const AboutTitle = styled.h2`
     
 `
-
 
 export { }
