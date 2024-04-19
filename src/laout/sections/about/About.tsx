@@ -36,6 +36,9 @@ const SectionTitle = styled.h2`
 const AboutText = styled.p`
     
 `
+const AboutTitle = styled.h2`
+    
+`
 
 
 export { }
