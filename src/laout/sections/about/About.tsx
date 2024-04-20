@@ -19,7 +19,7 @@ export const About = () => {
                 5+
                 </AboutTitle>
                 <AboutText>
-                Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+                
                 </AboutText>
             </FlexWrapper>
 
