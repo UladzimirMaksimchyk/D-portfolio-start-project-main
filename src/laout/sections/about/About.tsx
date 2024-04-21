@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import photo from '../../../assets/images/IMG_4173-_1_.webp'
 import { Skill } from "../skills/skill/Skill";
+import { Abouts } from "./Abouts";
 
 
 export const About = () => {
@@ -21,6 +22,11 @@ export const About = () => {
                 <AboutText>
                 Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
                 </AboutText>
+                <Abouts></Abouts>
+                <Abouts></Abouts>
+                <Abouts></Abouts>
+                <Abouts></Abouts>
+
             </FlexWrapper>
 
         </StyledAbout>
