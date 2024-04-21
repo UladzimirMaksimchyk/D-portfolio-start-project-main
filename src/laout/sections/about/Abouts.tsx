@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 
+
 type AboutsPropsType = {
     iconId?: string
     title?: string
@@ -12,7 +13,7 @@ export const Abouts = (props: AboutsPropsType) => {
     return (
 
         <StyledAbouts>
-            <Icon iconId={props.iconId} />
+            <Icon iconId="{props.iconId"/>
             <AboutsTitle>{props.title}</AboutsTitle>
             <AboutsTitle>{props.title}</AboutsTitle>
 
