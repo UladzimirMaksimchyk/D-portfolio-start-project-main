@@ -14,7 +14,9 @@ export const Abouts = (props: AboutsPropsType) => {
         <StyledAbouts>
             <Icon iconId={props.iconId} />
             <AboutsTitle>{props.title}</AboutsTitle>
-            <AboutsText>{props.description}</AboutsText>
+            <AboutsTitle>{props.title}</AboutsTitle>
+
+            {/* <AboutsText>{props.description}</AboutsText> */}
         </StyledAbouts>
 
     );
@@ -32,7 +34,7 @@ width: 33%;
 const AboutsTitle = styled.h3`
     
 `
-const AboutsText = styled.p`
+// const AboutsText = styled.p`
         
-    `
-export { }
+//     `
+// export { }
