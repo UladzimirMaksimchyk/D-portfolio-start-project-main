@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 
 type AboutsPropsType = {
-    iconId: string
-    title: string
-    description: string
+    iconId?: string
+    title?: string
+    description?: string
 }
 
 export const Abouts = (props: AboutsPropsType) => {
@@ -38,3 +38,5 @@ const AboutsTitle = styled.h3`
         
 //     `
 // export { }
+
+export{}
