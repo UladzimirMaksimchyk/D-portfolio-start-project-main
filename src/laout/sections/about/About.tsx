@@ -17,16 +17,16 @@ export const About = () => {
                     Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. Here are the major skiills i have.
                 </AboutText>
                 <AboutTitle>
-                5+
+                    5+
                 </AboutTitle>
                 <AboutText>
-                Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+                    Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
                 </AboutText>
-                <Abouts></Abouts>
-                <Abouts></Abouts>
-                <Abouts></Abouts>
-                <Abouts></Abouts>
-
+                {/* <Abouts iconId={"git"}></Abouts>
+                <Abouts iconId={"git"}></Abouts>
+                <Abouts iconId={"git"}></Abouts>
+                <Abouts iconId={"git"}></Abouts> */}
+                <Slider />
             </FlexWrapper>
 
         </StyledAbout>
@@ -39,6 +39,7 @@ export const About = () => {
 const StyledAbout = styled.section`
 /* background-image: url('../../../assets/images/IMG_4173-_1_.webp'); */
 min-height: 100vh;
+background-color: #070733;
 `
 const SectionTitle = styled.h2`
     
