@@ -21,10 +21,16 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-    
+    min-height: 50vh;
+    background-color: black;
+    color: snow;
 `
 const StyledForm = styled.section`
-    
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 `
 const Field = styled.section`
     
