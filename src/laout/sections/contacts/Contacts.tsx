@@ -11,6 +11,8 @@ export const Contacts = () => {
         <StyledForm>
             <Field/>
             <Field/>
+            <Field as ={"textarea"}/>
+
         </StyledForm>
       </StyledContacts>
     )
