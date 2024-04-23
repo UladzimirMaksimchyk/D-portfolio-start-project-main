@@ -9,13 +9,13 @@ export const Contacts = () => {
         Contact me, let’s make magic together
         </SectionTitle>
         <StyledForm>
-            <Field/>
-            <Field/>
-            <Field as ={"textarea"}/>
+            <Field placeholder={"Name:"}/>
+            <Field placeholder={"Email:"}/>
+            <Field placeholder={"Message:"} as ={"textarea"}/>
 
         </StyledForm>
       </StyledContacts>
-    )
+    );
 
 
 };
@@ -25,14 +25,14 @@ const StyledContacts = styled.section`
     background-color: black;
     color: snow;
 `
-const StyledForm = styled.section`
+const StyledForm = styled.form`
     max-width: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 `
-const Field = styled.section`
+const Field = styled.input`
     
 `
 
