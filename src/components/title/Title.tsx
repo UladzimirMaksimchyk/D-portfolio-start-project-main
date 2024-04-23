@@ -14,7 +14,18 @@ export const Title = () => {
 };
 
 const StyledTitle = styled.h2`
-    color: red;
+    color: black;
+    font-family: Poppins;
+font-size: 28px;
+font-weight: 600;
+line-height: 42px;
+text-align: left;
+text-shadow: 25px 15px 6px rebeccapurple;
+;
 `
+
+
+
+
 
 export { }
