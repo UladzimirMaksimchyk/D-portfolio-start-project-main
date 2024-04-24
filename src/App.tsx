@@ -6,6 +6,8 @@ import { Skills } from './laout/sections/skills/Skills';
 import { About } from './laout/sections/about/About';
 import { Works } from './laout/sections/works/Works';
 import { Contacts } from './laout/sections/contacts/Contacts';
+import { Slogan } from './laout/sections/slogan/Slogan';
+import { Footer } from './laout/footer/Footer';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             <About/>
             <Works/>
             <Contacts/>
+            <Slogan/>
+            <Footer/>
         </div>
     );
 }
