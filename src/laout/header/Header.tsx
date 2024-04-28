@@ -12,7 +12,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <FlexWrapper >
+                <FlexWrapper justify={"space-between"} align={"center"}>
                 {/* <Logo /> */}
                 <Title />
                 <Menu menuItems={items} />
@@ -26,6 +26,5 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-display: flex;
-justify-content: space-around;
+background-color:snow;
 `
