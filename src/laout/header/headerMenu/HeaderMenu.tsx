@@ -25,7 +25,7 @@ color: black;
 ul{
     display: flex;
     gap: 30px;
-    list-style-type :none;
+
 }
    
 `
