@@ -11,11 +11,14 @@ const items = ["Home", "About me", "Projects", "Contact"]
 export const Header = () => {
     return (
         <StyledHeader>
+
             <Container>
+
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                {/* <Logo /> */}
-                <Title />
-                <Menu menuItems={items} />
+
+                    {/* <Logo /> */}
+                    <Title />
+                    <Menu menuItems={items} />
 
                 </FlexWrapper>
 
@@ -27,4 +30,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
 background-color:snow;
+padding: 0;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 99999;
 `
