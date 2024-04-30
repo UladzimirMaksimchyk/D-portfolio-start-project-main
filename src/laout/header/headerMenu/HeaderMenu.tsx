@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../../styles/Theme";
 
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
@@ -38,16 +39,30 @@ ul{
 }
 `
 const ListItem = styled.li`
-  
+  position: relative;
 `
 const Link = styled.a`
   font-family: Poppins,sans-serif;
 font-size: 20px;
 font-weight: 600;
 text-align: center;
-color:red;
 
 `
 const Mask = styled.span`
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 50%;
+  overflow-y:hidden;
+  outline: 1px solid red;
+  color: ${theme.colors.accent};
+  &+&{
+    top: 50%;
+    span{
+      display: inline-block;
+      transform: translateY(-50%);
+
+    }
+  }
 `
