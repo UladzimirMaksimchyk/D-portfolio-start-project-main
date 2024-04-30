@@ -1,10 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { Title } from "../../components/title/Title";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { HeaderMenu } from "./headerMenu/HeaderMenu";
+
 
 const items = ["Home", "About me", "Projects", "Contact"]
 
@@ -18,7 +19,7 @@ export const Header = () => {
 
                     {/* <Logo /> */}
                     <Title />
-                    <Menu menuItems={items} />
+                    <HeaderMenu menuItems={items} />
 
                 </FlexWrapper>
 
