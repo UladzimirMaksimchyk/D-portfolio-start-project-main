@@ -25,11 +25,11 @@ export const Main = () => {
                         <Buttons>
                         <Button>
                             About me
-                            {/* <Icon iconId={'git'} /> */}
+                            <Icon iconId={'men'} />
                         </Button>
                         <Button1>
                             Projects
-                            {/* <Icon iconId={'git'} /> */}
+                            <Icon iconId={"disk"} />
                         </Button1>
 
                         </Buttons>
@@ -96,20 +96,29 @@ const Buttons = styled.div`
 const Button = styled.button`
     width: 160px;
     height: 50px;
-    background: #ff00f7 ;
+    background: #ff00f7;
 color: snow;
 border-radius:10px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 &:hover{
-transform: rotate(360deg);
-transition: 3s;
+    transform: translate(20px,20px);
+/* transform: rotate(360deg);
+transition: 3s; */
 }
 `
 const Button1 = styled.button`
+display: flex;
+justify-content: center;
+align-items: center;
+
 width:158px;
 height: 48px;
 border-radius: 10px;
 border: 2px solid #ff00f7;
+
 
 &:hover{
     transform: translate(20px,20px);
@@ -130,7 +139,8 @@ const Photo = styled.img`
     width: 400px;
 height: 400px;
 object-fit: cover;
-border-radius:  150px ;
+border-radius:  200px;
+background-image:linear-gradient 30px ( pink,blue);
 `
 
 
