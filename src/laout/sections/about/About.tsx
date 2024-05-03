@@ -8,6 +8,7 @@ import { Slider } from "../../../components/slider/Slider";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { Button } from "../../../components/Button";
 export const About = () => {
     return (
         <StyledAbout>
@@ -19,13 +20,13 @@ export const About = () => {
                     Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer. I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles. Here are the major skiills i have.
                 </AboutText>
                 <AboutTitles>
-                <AboutTitle>
-                    5+
-                </AboutTitle>
-                <AboutTextSec>
-                    Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
-                </AboutTextSec>
-
+                    <AboutTitle>
+                        5+
+                    </AboutTitle>
+                    <AboutTextSec>
+                        Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+                    </AboutTextSec>
+                    <Button />
                 </AboutTitles>
                 <FlexWrapper direction={"column"} align={"center"}>
                     {/* <Abouts iconId={"git"}></Abouts>
@@ -79,6 +80,24 @@ const AboutTitles = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+
+&:hover{
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(3px);
+
+
+    }
+}
+
 `
 
 
