@@ -4,12 +4,14 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import photo from '../../../assets/images/IMG_4173-_1_.webp'
 import { Skill } from "../skills/skill/Skill";
 import { Abouts } from "./Abouts";
-
-
+import { Slider } from "../../../components/slider/Slider";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 export const About = () => {
     return (
         <StyledAbout>
-            <FlexWrapper>
+            <Container>
                 <SectionTitle>
                     About me:
                 </SectionTitle>
@@ -19,15 +21,18 @@ export const About = () => {
                 <AboutTitle>
                     5+
                 </AboutTitle>
-                <AboutText>
+                <AboutTextSec>
                     Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
-                </AboutText>
-                {/* <Abouts iconId={"git"}></Abouts>
+                </AboutTextSec>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    {/* <Abouts iconId={"git"}></Abouts>
                 <Abouts iconId={"git"}></Abouts>
                 <Abouts iconId={"git"}></Abouts>
                 <Abouts iconId={"git"}></Abouts> */}
-                <Slider />
-            </FlexWrapper>
+                    <Slider iconId={"git"} />
+                </FlexWrapper>
+
+            </Container>
 
         </StyledAbout>
     );
@@ -37,19 +42,28 @@ export const About = () => {
 
 
 const StyledAbout = styled.section`
-/* background-image: url('../../../assets/images/IMG_4173-_1_.webp'); */
-min-height: 100vh;
-background-color: #070733;
-`
-const SectionTitle = styled.h2`
-    
+min-height: 70vh;
 `
 
-const AboutText = styled.p`
-    
+
+const AboutText = styled.div`
+font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+
 `
 const AboutTitle = styled.h2`
+font-family: Poppins;
+font-size: 96px;
+font-weight: 600;
+line-height: 144px;
+text-align: left;
+color: ${theme.colors.accent};
     
+`
+const AboutTextSec = styled.h2`
 `
 
 export { }
