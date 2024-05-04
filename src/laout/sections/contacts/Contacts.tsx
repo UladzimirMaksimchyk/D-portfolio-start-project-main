@@ -28,23 +28,32 @@ export const Contacts = () => {
 };
 
 const StyledContacts = styled.section`
-    min-height: 50vh;
-    text-align: center;
 
 `
 const StyledForm = styled.form`
-    max-width: 500px;
+    max-width: 540px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     margin: 0 auto;
+
+
+    ${Button} {
+width: 10px;
+height:  50px;
+padding: 12px 25px 12px 25px;
+border-radius: 8px ;
+background-color: #ff00f7;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+
+    }
 `
 const Field = styled.input`
     
 `
-
-
 
 
 
