@@ -1,20 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
+import { Button } from "../../../components/Button";
+import { Container } from "../../../components/Container";
 
 export const Contacts = () => {
     return (
-      <StyledContacts>
-        <SectionTitle>
-        Contact me, let’s make magic together
-        </SectionTitle>
-        <StyledForm>
-            <Field placeholder={"Name:"}/>
-            <Field placeholder={"Email:"}/>
-            <Field placeholder={"Message:"} as ={"textarea"}/>
+        <StyledContacts>
+            <Container>
+                <SectionTitle>
+                    Contact me, let’s make magic together
+                </SectionTitle>
+                <StyledForm>
+                    <Field placeholder={"Name:"} />
+                    <Field placeholder={"Email:"} />
+                    <Field placeholder={"Message:"} as={"textarea"} />
+                    <Button type={"submit"}>
+                        Send
+                    </Button>
+                </StyledForm>
 
-        </StyledForm>
-      </StyledContacts>
+            </Container>
+        </StyledContacts>
     );
 
 
@@ -22,8 +29,8 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     min-height: 50vh;
-    background-color: black;
-    color: snow;
+    text-align: center;
+
 `
 const StyledForm = styled.form`
     max-width: 500px;
@@ -31,6 +38,7 @@ const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0 auto;
 `
 const Field = styled.input`
     
