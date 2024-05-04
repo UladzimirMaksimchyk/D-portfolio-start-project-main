@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 
 export const Contacts = () => {
     return (
@@ -19,7 +20,6 @@ export const Contacts = () => {
                         Send
                     </Button>
                 </StyledForm>
-
             </Container>
         </StyledContacts>
     );
@@ -35,24 +35,36 @@ const StyledForm = styled.form`
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     margin: 0 auto;
+    
 
 
     ${Button} {
-width: 10px;
-height:  50px;
+width: 90px;
+height:  20px;
 padding: 12px 25px 12px 25px;
 border-radius: 8px ;
 background-color: #ff00f7;
 font-family: Poppins;
-font-size: 16px;
+font-size: 12px;
 font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
 
     }
 `
 const Field = styled.input`
-    
+width: 100%;
+border: 2px solid ${theme.colors.accent};
+font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+color: ${theme.colors.font};
 `
 
 
