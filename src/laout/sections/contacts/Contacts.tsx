@@ -39,16 +39,19 @@ const StyledForm = styled.form`
     gap: 16px;
     margin: 0 auto;
     
-
+textarea{
+    resize: none;
+    height: 155px;
+}
 
     ${Button} {
-width: 90px;
-height:  20px;
+width: 110px;
+height:  30px;
 padding: 12px 25px 12px 25px;
 border-radius: 8px ;
 background-color: #ff00f7;
-font-family: Poppins;
-font-size: 12px;
+font-family: Poppins sans-serif;
+font-size: 14px;
 font-weight: 600;
 display: flex;
 justify-content: center;
@@ -59,12 +62,17 @@ align-items: center;
 const Field = styled.input`
 width: 100%;
 border: 2px solid ${theme.colors.accent};
+padding: 7px 15px;
 font-family: Poppins;
 font-size: 18px;
 font-weight: 500;
 line-height: 32px;
 text-align: left;
 color: ${theme.colors.font};
+
+&::placeholder{
+    color: ${theme.colors.placeholderColor};
+}
 `
 
 
