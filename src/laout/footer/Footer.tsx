@@ -13,22 +13,22 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewbox={"0 0 21px 21px"} iconId={"git"} />
+                            <Icon height={"32px"} width={"32px"} viewbox={"0 0 32px 32px"} iconId={"facebook"} />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewbox={"0 0 21px 21px"} iconId={"git"} />
+                            <Icon height={"32px"} width={"32px"} viewbox={"0 0 32px 32px"} iconId={"instagram"} />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewbox={"0 0 21px 21px"} iconId={"git"} />
+                            <Icon height={"32px"} width={"32px"} viewbox={"0 0 32px 32px"} iconId={"dribble"} />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewbox={"0 0 21px 21px"} iconId={"git"} />
+                            <Icon height={"32px"} width={"32px"} viewbox={"0 0 32px 32px"} iconId={"sms"} />
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -43,7 +43,11 @@ const StyledFooter = styled.footer`
 background-color: ${theme.colors.primaryBg};
 `
 const Name = styled.span`
-    
+    font-family: Poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 27px;
+
 `
 
 const SocialList = styled.ul`
@@ -60,6 +64,11 @@ const SocialLink = styled.a`
 `
 
 const Copyright = styled.small`
+font-family: Poppins;
+font-size: 12px;
+font-weight: 500;
+line-height: 27px;
+
         
 `
 
