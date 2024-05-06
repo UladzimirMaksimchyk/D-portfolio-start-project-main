@@ -22,6 +22,7 @@ body {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 
 }
 ul {
@@ -30,18 +31,19 @@ ul {
 button {
     background-color: unset;
     border: none;
+    cursor: pointer;
 }
 
 section{
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
-section: nth-of-type(odd) {
+section {
   background-color: ${theme.colors.primaryBg};
 }
-section: nth-of-type(even) {
+/* section: nth-of-type(even) {
   background-color: ${theme.colors.secondaryBg};
-}
+} */
 
 `
 
