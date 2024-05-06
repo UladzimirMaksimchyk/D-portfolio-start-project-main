@@ -44,9 +44,13 @@ background-color: ${theme.colors.primaryBg};
 `
 const Name = styled.span`
     font-family: Poppins;
-font-size: 12px;
+font-size: 22px;
 font-weight: 500;
-line-height: 27px;
+line-height: 90px;
+
+&:hover{
+    text-shadow: 15px 15px 5px #ff00f7;
+}
 
 `
 
