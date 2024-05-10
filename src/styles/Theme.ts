@@ -5,10 +5,11 @@ export const theme = {
         secondaryBg:"#000000",
         font: "rgba(#000000)",
         placeholderColor: "#000000"
-    }
+    },
 
-    media:{
-        
+    media: {
+        tablet: "screen and and (max-width: 768px)",
+        mobile: "screen and and (max-width: 576px)"
     }
 }
 
