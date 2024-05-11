@@ -10,7 +10,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
             <BurgerButton>
                 <span> </span>
             </BurgerButton>
-<MobileMenuWrapper>
+<MobileMenuPopup>
 <ul>
                 {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
@@ -28,7 +28,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 })}
             </ul>
 
-</MobileMenuWrapper>
+</MobileMenuPopup>
         </StyledMobileMenu>
     );
 };
@@ -37,11 +37,11 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 
 
 const StyledMobileMenu = styled.nav`
-ul{
+/* ul{
 display: flex;
 gap: 30px;
 justify-content: center;
-}
+} */
 
 @media ${theme.media.tablet}{
   display: none;
@@ -91,9 +91,23 @@ span {
 
 `
 
-const MobileMenuWrapper = styled.div{
-    
-}
+const MobileMenuPopup = styled.div`
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 99999;
+    background-color: ${theme.colors.primaryBg};
+
+    ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+`
 
 
 const Link = styled.a`
