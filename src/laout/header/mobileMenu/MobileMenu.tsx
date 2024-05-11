@@ -4,26 +4,31 @@ import { theme } from "../../../styles/Theme";
 
 
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
-  return (
-    <StyledMobileMenu>
-      <ul>
-        {props.menuItems.map((item, index) => {
-          return <ListItem key={index}>
-            <Link href="">
-              {item}
-              {/* <Mask>
+    return (
+        <StyledMobileMenu>
+
+            <BurgerButton>
+                <span> </span>
+            </BurgerButton>
+
+            <ul>
+                {props.menuItems.map((item, index) => {
+                    return <ListItem key={index}>
+                        <Link href="">
+                            {item}
+                            {/* <Mask>
                 <span>{item}</span>
               </Mask>
               <Mask>
                 <span>{item}</span>
               </Mask> */}
 
-            </Link>
-          </ListItem>
-        })}
-      </ul>
-    </StyledMobileMenu>
-  );
+                        </Link>
+                    </ListItem>
+                })}
+            </ul>
+        </StyledMobileMenu>
+    );
 };
 
 
@@ -41,6 +46,19 @@ justify-content: center;
 }
 
 `
+const BurgerButton = styled.button`
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+
+
+
+
+`
+
+
 const Link = styled.a`
 font-family: Poppins,sans-serif;
 font-size: 20px;
