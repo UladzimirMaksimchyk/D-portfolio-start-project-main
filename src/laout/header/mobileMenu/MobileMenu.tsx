@@ -10,8 +10,8 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
             <BurgerButton>
                 <span> </span>
             </BurgerButton>
-
-            <ul>
+<MobileMenuWrapper>
+<ul>
                 {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
                         <Link href="">
@@ -27,6 +27,8 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                     </ListItem>
                 })}
             </ul>
+
+</MobileMenuWrapper>
         </StyledMobileMenu>
     );
 };
@@ -54,9 +56,44 @@ const BurgerButton = styled.button`
     height: 200px;
 
 
+span {
+    display: block;
+    width: 36px;
+    height: 2px;
+    color: ${theme.colors.font};
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
 
+
+&::before{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    color: ${theme.colors.font};
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+&::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    color: ${theme.colors.font};
+    position: absolute;
+    transform: translateY(10px);
+
+}
+
+}
 
 `
+
+const MobileMenuWrapper = styled.div{
+    
+}
 
 
 const Link = styled.a`
