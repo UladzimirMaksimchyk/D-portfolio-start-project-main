@@ -143,6 +143,12 @@ height: 450px;
 object-fit: cover;
 border-radius:  200px;
 
+@media ${theme.media.mobile} {
+    width: 310px;
+    height: 380px;
+}
+
+
 `
 
 export { }
