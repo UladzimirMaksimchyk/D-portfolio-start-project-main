@@ -19,6 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: ${theme.colors.font};
   line-height: 3;
+  
+  min-width: 360px;
 }
 a {
     text-decoration: none;
@@ -35,7 +37,11 @@ button {
 }
 
 section{
-  padding: 50px 0;
+  padding: 100px 0;
+
+  @media ${theme.media.mobile}{
+    padding: 80px 0;
+  }
 }
 
 section {
