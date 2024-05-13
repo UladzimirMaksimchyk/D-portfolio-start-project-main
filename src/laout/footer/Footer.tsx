@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
+import { font } from "../../styles/Common";
 
 
 export const Footer = () => {
@@ -42,11 +43,14 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
 background-color: ${theme.colors.primaryBg};
 `
+
 const Name = styled.span`
-    font-family: Poppins;
+${font({ family: "Poppins, sans-serif", weight: 600, Fmax: 42, Fmin: 36 })}
+ font-family: Poppins;
 font-size: 22px;
 font-weight: 500;
 line-height: 90px;
+
 
 &:hover{
     text-shadow: 15px 15px 5px #ff00f7;
@@ -58,6 +62,7 @@ const SocialList = styled.ul`
     display: flex;
     gap: 30px;
 `
+
 const SocialItem = styled.li`
     
 `
