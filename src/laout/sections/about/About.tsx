@@ -9,6 +9,8 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { Button } from "../../../components/Button";
+
+
 export const About = () => {
     return (
         <StyledAbout>
@@ -26,7 +28,9 @@ export const About = () => {
                     <AboutTextSec>
                         Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
                     </AboutTextSec>
-                    <Button />
+                    <Button>
+                        it-Incubator
+                    </Button>
                 </AboutTitles>
                 <FlexWrapper direction={"column"} align={"center"}>
                     {/* <Abouts iconId={"git"}></Abouts>
@@ -82,9 +86,24 @@ const AboutTitles = styled.div`
     align-items: center;
     position: relative;
 
+    ${Button}{
+    opacity: 0;
+    width: 260px;
+    height: 80px;
+    background-color: #ff00f7;
+    /* background-color: ${theme.colors.accent}; */
+    color: ${theme.colors.font};
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-&:hover{
-    &::before{
+&::before{
         content: "";
         position: absolute;
         left: 0;
@@ -93,10 +112,33 @@ const AboutTitles = styled.div`
         bottom: 0;
         background: rgba(0,0,0,0.3);
         backdrop-filter: blur(3px);
-
-
+        opacity: 0;
     }
+
+
+&:hover{
+
+    &::before {
+        opacity: 1;
+    }
+
+    ${Button}{
+        opacity: 1;
+    }
+
 }
+
+@media ${theme.media.tablet}{
+    &::before {
+        opacity: 1;
+    }
+
+    ${Button}{
+        opacity: 1;
+    }
+
+}
+
 
 `
 
