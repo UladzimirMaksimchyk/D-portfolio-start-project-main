@@ -9,6 +9,7 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { Button } from "../../../components/Button";
+import { font } from "../../../styles/Common";
 
 
 export const About = () => {
@@ -55,9 +56,10 @@ min-height: 70vh;
 
 
 const AboutText = styled.p`
-font-family: Poppins;
+${font({ family: "Poppins, sans-serif", weight: 500, Fmax: 18, Fmin: 12 })}
+/* font-family: Poppins;
 font-size: 18px;
-font-weight: 500;
+font-weight: 500; */
 line-height: 32px;
 text-align: left;
 
