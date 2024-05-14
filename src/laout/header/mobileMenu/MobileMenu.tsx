@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 import { theme } from "../../../styles/Theme";
 
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
-    const{menuIsOpen,setmenuIsOpen} = useState(false)
+export const MobileMenu: React.FC<(menuItems:  Array<string> }> = {props:{menuItems: Array<string>}) =>{
+    const{menuIsOpen,setmenuIsOpen} = (false)
     return (
         <StyledMobileMenu>
             <BurgerButton isOpen={menuIsOpen}>
