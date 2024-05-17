@@ -8,16 +8,18 @@ import { Works } from './laout/sections/works/Works';
 import { Contacts } from './laout/sections/contacts/Contacts';
 import { Slogan } from './laout/sections/slogan/Slogan';
 import { Footer } from './laout/footer/Footer';
+import { Particle } from './components/particle/Particle';
 
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <Skills/>
-            <About/>
             <Works/>
+            <About/>
             <Contacts/>
             <Slogan/>
             <Footer/>
