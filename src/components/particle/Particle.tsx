@@ -6,7 +6,7 @@ import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
-const Particle = () => {
+export const Particle = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
@@ -20,24 +20,25 @@ const Particle = () => {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await console.log(container);
     }, []);
+
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#0d47a1",
-                    },
-                },
+                // background: {
+                //     color: {
+                //         value: "#ffffff",
+                //     },
+                // },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
+                        // onClick: {
+                        //     enable: true,
+                        //     mode: "push",
+                        // },
                         onHover: {
                             enable: true,
                             mode: "repulse",
@@ -56,10 +57,10 @@ const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#000000",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#ff00f7",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
