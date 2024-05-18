@@ -50,18 +50,18 @@ export const Particle = () => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: "#000000",
+                        value: "#ff00f7",
                     },
                     links: {
-                        color: "#ff00f7",
-                        distance: 150,
+                        color: "#000000",
+                        distance: 105,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
@@ -73,15 +73,15 @@ export const Particle = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
-                        value: 80,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.5,
@@ -90,7 +90,7 @@ export const Particle = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 0.5, max: 4 },
                     },
                 },
                 detectRetina: true,
